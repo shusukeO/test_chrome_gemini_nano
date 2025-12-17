@@ -58,6 +58,10 @@ http://localhost:8080 でアクセス
 - **モデル**: Gemini Nano（マルチモーダル対応）
 - **対応言語**: 日本語、英語、スペイン語
 
+## ドキュメント
+
+- [実装上の注意点](IMPLEMENTATION_NOTES.md)
+
 ## 参考リンク
 
 - [Chrome Built-in AI 公式ドキュメント](https://developer.chrome.com/docs/ai/built-in)
