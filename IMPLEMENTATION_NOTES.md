@@ -4,7 +4,7 @@ Chrome Built-in AI (Prompt API) を使用する際の実装上の注意点をま
 
 ## API アクセス方法
 
-API へのアクセス方法は複数あります：
+API へのアクセス方法は複数あります。
 
 ```javascript
 // 推奨: 両方の形式に対応
@@ -17,7 +17,7 @@ const api = self.ai?.languageModel ||
 
 ## モデルの可用性チェック
 
-`availability()` メソッドを使用します（`capabilities()` ではない）：
+`availability()` メソッドを使用します（`capabilities()` ではない）。
 
 ```javascript
 const availability = await api.availability({
@@ -35,13 +35,13 @@ const availability = await api.availability({
 
 ## 言語指定は必須
 
-出力言語を指定しないと警告が出ます：
+出力言語を指定しないと以下の警告が出ます。
 
 ```
 No output language was specified in a LanguageModel API request.
 ```
 
-`create()` 時に `expectedInputs` と `expectedOutputs` で言語を指定してください：
+`create()` 時に `expectedInputs` と `expectedOutputs` で言語を指定してください。
 
 ```javascript
 const session = await api.create({
@@ -64,7 +64,7 @@ const session = await api.create({
 
 ## promptStreaming の引数形式
 
-メッセージは **配列** でラップする必要があります：
+メッセージは **配列** でラップする必要があります。
 
 ```javascript
 // 正しい形式
@@ -85,7 +85,7 @@ const stream = session.promptStreaming({
 
 ## ストリーミングのチャンク処理
 
-チャンクは **差分** で返されるため、累積して表示する必要があります：
+チャンクは **差分** で返されるため、累積して表示する必要があります。
 
 ```javascript
 let fullText = "";
@@ -97,7 +97,7 @@ for await (const chunk of stream) {
 
 ## 画像の渡し方
 
-画像は `ImageBitmapSource` 型で渡します：
+画像は `ImageBitmapSource` 型で渡します。
 
 - `Blob`
 - `File`（`<input type="file">` から取得）
@@ -124,7 +124,7 @@ const canvas = document.querySelector("canvas");
 
 ## エラーハンドリング
 
-よくあるエラーと対処法：
+よくあるエラーと対処法についてまとめます。
 
 | エラー | 原因 | 対処法 |
 |--------|------|--------|

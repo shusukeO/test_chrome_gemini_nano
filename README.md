@@ -19,7 +19,7 @@
 
 ### 1. Chrome フラグの有効化
 
-Chrome のアドレスバーに以下を入力し、それぞれ「Enabled」に設定してください：
+Chrome のアドレスバーに以下を入力し、それぞれ「Enabled」に設定してください。
 
 ```
 chrome://flags/#optimization-guide-on-device-model
@@ -37,7 +37,7 @@ chrome://flags/#prompt-api-for-gemini-nano-multimodal-input
 open index.html
 ```
 
-または、ローカルサーバーを起動：
+または、ローカルサーバーを起動します。
 
 ```bash
 python3 -m http.server 8080
