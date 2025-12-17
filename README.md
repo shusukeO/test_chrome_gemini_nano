@@ -2,6 +2,8 @@
 
 ブラウザ内で動作する Gemini Nano を使用して、画像の内容を解説する Web アプリケーションです。
 
+**デモ**: https://shusukeo.github.io/test_chrome_gemini_nano/
+
 ![スクリーンショット](screen_shoto.png)
 
 ## 特徴
